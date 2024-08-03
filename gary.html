@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gary Le Masson Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header-logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4c4c4c;
+        }
+        .header-logo span {
+            color: #ea4335;
+        }
+        .search-bar {
+            margin-left: 20px;
+            flex-grow: 1;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .nav-links {
+            margin-left: auto;
+            display: flex;
+            gap: 10px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #4c4c4c;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .nav-links a:hover {
+            background-color: #f0f0f0;
+        }
+        .nav-links .active {
+            border-bottom: 2px solid #4c8bf5;
+        }
+        .main-content {
+            display: flex;
+            padding: 20px;
+        }
+        .left-side {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .left-side .section {
+            margin-bottom: 20px;
+            padding-left: 20px; /* Space from left */
+        }
+        .left-side .section a {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #1a0dab;
+        }
+        .left-side .section a:hover {
+            text-decoration: underline;
+        }
+        .left-side .section p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .right-side {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        .right-side img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .right-side .name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .right-side .details {
+            font-size: 14px;
+            color: #555;
+        }
+        .right-side .details p {
+            margin: 5px 0;
+        }
+        .footer {
+            background-color: white;
+            border-top: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer .cta-button {
+            background-color: #4c8bf5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .footer .cta-button:hover {
+            background-color: #357ae8;
+        }
+        .footer .custom-footer {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #ea4335;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">
+            G<span>ary</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Google Resume">
+        </div>
+        <div class="nav-links">
+            <a href="#">Web analytics</a>
+            <a href="#">References</a>
+            <a href="#" class="active">Google Resume</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="left-side">
+            <div class="section">
+                <a href="#">My Skills</a>
+                <p>Web Project management, SEO, user experience, ergonomics, content marketing, Web Analytics...</p>
+            </div>
+            <div class="section">
+                <a href="#">My Experience</a>
+                <p>Since 2007 - Hired in a web agency, I have been working for a web hosting company and then in a Webmarketing agency...</p>
+            </div>
+            <div class="section">
+                <a href="#">My studies in France and Scotland</a>
+                <p>2003 to 2007 - I started in a French Business school for 2 years and then I traveled to Scotland for 2 more years...</p>
+            </div>
+            <div class="section">
+                <a href="#">That's incredible what you can learn in books</a>
+                <p>This is a few books recommendations that really improved my knowledge about the Web, SEO, UX...</p>
+            </div>
+            <div class="section">
+                <a href="#">My references</a>
+                <p>Here is some of my favorite websites that "truly" deserve a SEO optimized anchor text. They are current or former websites...</p>
+            </div>
+        </div>
+        <div class="right-side">
+            <img src="https://via.placeholder.com/150" alt="Gary Le Masson">
+            <div class="name">Gary Le Masson</div>
+            <div class="details">
+                <p>SEO and Webanalytics Consultant based in Paris - France</p>
+                <p><strong>Age:</strong> 34</p>
+                <p><strong>Height:</strong> 1.78 m (Metric System only)</p>
+                <p><strong>Location:</strong> 24, Boulevard de Reuilly - 75012 Paris, France</p>
+                <p><strong>Occupation:</strong> Freelance</p>
+                <p><strong>Expertise:</strong> SEO, Webanalytics</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#" class="cta-button">Hire me</a>
+        <div class="custom-footer">
+            G<span>aaaaaaa</span>ry
+        </div>
+    </div>
+</body>
+</html>

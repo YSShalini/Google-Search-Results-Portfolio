@@ -1,0 +1,291 @@
+
+.shalini-results-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.shalini-results-container {
+    margin-top: 150px; /* Space for the fixed header */
+    padding: 20px;
+   
+}
+
+.google-logo-small {
+    font-family:'Gadugi';
+    font-size: 36px;
+    font-weight:550;
+    letter-spacing: -4px;
+    padding:30px;
+
+}
+
+.google-logo-small span {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.google-logo-small .blue {
+    color: #4285f4; /* Google's primary blue color */
+}
+
+.google-logo-small .red {
+    color: #ea4335; /* Google's red color */
+}
+
+.google-logo-small .yellow {
+    color: #fbbc05; /* Google's yellow color */
+}
+
+.google-logo-small .green {
+    color: #34a853; /* Google's green color */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fdfdfd;
+    position: fixed;
+    top: 78px;
+    width: 100%;
+    left:200px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(90, 85, 85);
+    font-size:18px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ffffff;
+   }
+  
+  .active {
+    color: #0750e2;
+    text-decoration: underline;
+ 
+  }
+
+.results-search-box {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.results-search-box input[type="text"] {
+    padding: 10px 10px 10px 50px; /* Increase left padding to move text right */
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    margin-top:15px;
+    border-radius: 24px;
+    font-size: 16px;
+    outline: none;
+    color: #000;
+    width: 100%;
+    flex: 1;
+}
+
+.results-search-box button {
+    color: #d7cfcf;
+    cursor: pointer;
+    font-size: 20px;
+    padding:10px;
+    margin-top:10px;
+    background-color: #fff;
+border-color: #fff;
+}
+
+.results-search-box button:hover {
+    background-color: #b6b9bd; 
+    }
+
+.search-result {
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #fff;
+    max-width: 75%;
+    margin-left:180px;
+}
+
+.result-title {
+    margin-bottom: 2px;
+    font-family:'Gadugi';
+    font-weight:normal;
+    color: blue;
+    cursor: pointer;
+    text-decoration: none; 
+    display: block;
+}
+
+.result-title a {
+    color: #091cae; /* Google's link color */
+    text-decoration: none;
+}
+
+.result-title a:hover {
+    text-decoration: underline;
+}
+
+.result-url {
+    color: #04792d;
+    font-size: 18px;
+    margin-top:4px;
+    margin-bottom:2px;
+}
+
+.additional-info {
+    display: none;
+}
+
+.additional-info.show {
+    display: block;
+}
+
+.result-snippet {
+    color: #333;
+    font-size: 16px;
+    margin-top:2px;
+}
+aside {
+    width: 22%;
+    position: fixed;
+    top: 150px; /* Adjust as needed */
+    right: 10px; /* Adjust to keep it on the right side */
+    background-color: rgb(255, 255, 255);
+    color: black; /* Adjust text color as needed */
+    padding: 10px;
+    height: 500px;
+    z-index: 100;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+aside h2, aside h4, aside h3 {
+    margin: 0;
+}
+aside h2 {
+    font-family: Gadugi;
+    color: black;
+    font-weight: 500;
+}
+aside h4 {
+    font-family: Gadugi;
+    color: rgb(124, 120, 120);
+    margin-top: 5px; /* Reduced margin to lessen space between h2 and h4 */
+}
+aside h3 {
+    margin: 5px 0; /* Consistent spacing for details */
+}
+aside h3 span {
+    color: black; /* For labels */
+}
+aside h3 span.value {
+    color: grey; /* For values after colon */
+}
+
+p{
+    color:#000;
+}
+.additional-info .additional-table {
+    width: 100%; /* Make the table width 100% of its container */
+    border-collapse: collapse; /* Collapse borders between cells */
+    margin-bottom: 10px; /* Provide some spacing between table and paragraphs */
+}
+
+.additional-info h4, .additional-info h5 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size:large;
+}
+
+/* Style for table rows */
+.additional-info .additional-table tr {
+    border-bottom: 1px solid #ccc; /* Add bottom border to separate rows */
+}
+
+/* Style for table cells */
+.additional-info .additional-table td {
+    padding: 10px; /* Padding inside each cell */
+    text-align: center; /* Center-align text in cells */
+}
+
+/* Style for paragraphs within .additional-info */
+.additional-info p {
+    margin-bottom: 10px; 
+    margin-left:20px;
+    font-size:large;/* Space between paragraphs */
+}
+
+.search-box {
+    position: relative;
+    width: 70%;
+}
+
+.search-box i {
+    position: absolute;
+    top: 35%;
+    left: 730px;
+    transform: translateY(-50%);
+    color:blue;
+    cursor: pointer;
+}
+
+.search-box i.fa-microphone {
+    left: 660px;
+    color:blue;
+    cursor: pointer;
+}
+.search-box i.fa-camera {
+    left: 690px;
+    color:#4285f4;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px 10px 10px 50px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom:20px;
+    margin-right:890px;
+ 
+}
+
+.google-resume h2 {
+    color: black;
+    margin-top: 20px; /* Space above Google Resume */
+}
+.google-resume a {
+    color: blue;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.google-resume hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
